@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>랜덤 회차 뽑기</title>
+  <title>개대충 짠 마차살 회차 뽑기</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@
 <body>
   <div class="container">
     <h1>마차살 회차 뽑기</h1>
-    <p>최신 회차 또는 현재 진도를 입력: </p>
+    <p>최신 회차 또는 현재 진도 입력: </p>
     <input type="number" id="maxNumber" placeholder="예: 30" min="1">
     <br>
     <button onclick="pickRandom()">뽑기</button>
@@ -63,7 +63,7 @@
       }
 
       const randomNumber = Math.floor(Math.random() * max) + 1;
-      resultDiv.textContent = `오늘 플래너에 적을 회차는: ${randomNumber} 입니다.`;
+      resultDiv.textContent = `오늘 적을 회차: ${randomNumber}`;
     }
   </script>
 </body>
